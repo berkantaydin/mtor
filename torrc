@@ -1,0 +1,18 @@
+SocksPort 9050
+SocksListenAddress 127.0.0.1
+
+#SafeLogging 0
+#AllowUnverifiedNodes
+
+Exitpolicy reject *:*
+ControlPort 9051
+
+DataDirectory ./data
+
+AvoidDiskWrites 1
+GeoIPFile geoip/geoip
+GeoIPV6File geoip/geoip6
+
+ExcludeExitNodes {??}
+StrictExitNodes 1
+ExitNodes {US}
